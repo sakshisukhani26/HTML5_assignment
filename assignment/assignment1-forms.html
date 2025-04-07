@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateMe(){
+            age = document.getElementById("txtage").setCustomValidity("please fill this valtech age");
+        };
+        window.onload = validateMe;
+
+        function checkit(elm){
+            if(elm.value<18){
+                elm.setCustomValidity("you are too young to join us");
+            }else if(elm.value>90){
+                elm.setCustomValidity("you are too old to join us");
+            }else{
+                elm.setCustomValidity("");
+            }
+        };
+        function checkdate(elm) {
+            // Date object
+                const date = new Date();
+                let currentDay= String(date.getDate()).padStart(2, '0');
+                let currentMonth = String(date.getMonth()+1).padStart(2,"0");
+                let currentYear = date.getFullYear();
+                let currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
+                console.log("The current date is " + currentDate); 
+                console.log(elm.value<currentDate);
+                if(elm.value<currentDate){
+                    elm.setCustomValidity("Select valid date");
+                }else{
+                    elm.setCustomValidity("");
+                }
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Recruitment Form</legend>
+    <form>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="txtfn" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="txtln" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="txtemail" pattern=".+@gmail\.com" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" id="txtmale" name="gender" required>Male</input>
+                    <input type="radio" id="txtfemale" name="gender">Female</input></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" id="txtage" oninput="checkit(this)" required></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <input type="text" list="city" placeholder="Select designation" required/>
+                    <datalist id="city">
+                        <option value="Ahemdabad">Ahemdabad</option>
+                        <option value="Gandhinagar">Gandhinagar</option>
+                        <option value="Ambaji">Ambaji</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Vadodra">Vadodra</option>
+                        <option value="Deesa">Deesa</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Visnagar">Visnagar</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Resume</td>
+                <td><input type="file" id="resume" accept=".doc,.docx,.pdf" required></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select id="designation" multiple required>
+                        <option value="Programmer">Programmer</option>
+                        <option value="Analyst">Analyst</option>
+                        <option value="Manager">Manager</option>
+                        <option value="HR">HR</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of joining</td>
+                <td><input type="date" id="date" oninput="checkdate(this)" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>
