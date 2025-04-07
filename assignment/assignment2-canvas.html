@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Holi Canvas</title>
+  <style>
+    canvas {
+      border: 1px solid gray;
+      display: block;
+      margin: auto;
+      background-color: #fff8e1;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+
+      function drawRandomCircle() {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const radius = Math.random() * 50 + 10;
+
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
+        const a = Math.random() * 0.5 ;
+
+        ctx.beginPath();
+        ctx.fillStyle = "rgb("+r+","+g+","+b+","+a+")";
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      function drawText() {
+        ctx.font = "bold 36px Arial";
+        ctx.fillStyle = "#d50000";
+        ctx.textAlign = "center";
+        ctx.fillText("Happy Holi!", canvas.width / 2, canvas.height / 2);
+
+        ctx.font = "18px Arial";
+        ctx.fillStyle = "#3e2723";
+        ctx.fillText("Let the colors bring joy and love", canvas.width / 2, canvas.height / 2 + 40);
+      }
+
+      function refreshCanvas() {
+        ctx.fillStyle = "#fff8e1"; // background
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        drawText();
+      }
+
+      // Initial setup
+      drawText();
+
+      // Draw circles continuously
+      setInterval(drawRandomCircle, 100);
+
+      // Refresh every 5 seconds (5000 ms)
+      setInterval(refreshCanvas, 5000);
+    };
+  </script>
+</head>
+<body>
+  <canvas width="500" height="500"></canvas>
+</body>
+</html>
