@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x{
+            background-color: aquamarine;
+            padding: 10px;
+            .y{
+                background-color: cadetblue;
+                border: 5px dotted red;
+            }
+            &.y{ 
+                font-family: 'Courier New', Courier, monospace;
+            }
+            &+p{
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat fugit obcaecati optio itaque nihil necessitatibus dolorum animi minima consequatur quis. Inventore quos deleniti minus, error non dolores ad perspiciatis voluptatem.
+        <div class="y">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et accusantium ipsum facere quod perferendis asperiores tempore modi expedita ipsa incidunt in eum dolor, harum quo qui pariatur exercitationem optio cum?</div>
+    </div>
+    <div class="x y">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius consequuntur non ratione perferendis exercitationem quis. Explicabo delectus culpa odit veniam aliquid ex labore aperiam quidem molestiae quis, corporis dolorum.</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam quibusdam deleniti recusandae id dolorum vitae? Quae, dolorum. Impedit explicabo aperiam nam voluptatum consequatur, tempora cumque incidunt nemo sapiente. Delectus?</p>
+</body>
+</html>

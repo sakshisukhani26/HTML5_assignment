@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 500px;
+            background-color: silver;
+            margin: 0px auto;
+            display: flex;
+        }
+        article{
+            flex-basis: 150px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-family: sans-serif;
+            font-size: 36px;
+            /* flex-grow: 0; */
+        }
+        article:nth-child(1){
+            background-color: brown;
+            /* flex: 1 0 150px; */
+            /* flex-grow: 1; */
+        }
+        article:nth-child(2){
+            background-color: indigo;
+            /* flex-shrink: 0; */
+            /* used for shrinking if it is 0 it wont shrink */
+        }
+        article:nth-child(3){
+            background-color: aquamarine;
+        }
+        article:nth-child(4){
+            background-color:burlywood;
+        }
+        article:nth-child(5){
+            background-color: cornsilk;
+            /* flex-grow: 2; */
+        }
+        article:nth-child(6){
+            background-color: darkgrey;
+        }
+        article:nth-child(7){
+            background-color: wheat;
+        }
+        article:nth-child(8){
+            background-color: violet;
+        }
+        article:nth-child(9){
+            background-color: aqua;
+        }
+        article:nth-child(10){
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+        <article>6</article>
+        <article>7</article>
+        <article>8</article>
+        <article>9</article>
+        <article>10</article>
+    </section>
+</body>
+</html>

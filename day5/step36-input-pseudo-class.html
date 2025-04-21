@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callFun(elm) {
+            elm.setAttribute("disabled","disabled");
+        }
+    </script>
+    <style>
+        /* input:checked{
+            outline: 2px solid orangered;
+        } 
+        input[type="number"]:valid{
+            outline: 2px solid green;
+        }
+        input[type="number"]:invalid{
+            outline: 2px solid red;
+        }
+        button:disabled{
+            background-color:  saddlebrown;
+            color: wheat;
+        }
+        div::selection{
+            background-color: cornflowerblue;
+            color: beige;
+        }
+        .z:empty{
+            border: 2px solid brown;
+        }
+        body>article{
+            border: 2px solid black;
+        }*/
+    </style>
+</head>
+<body>
+    <div>
+        <label for="pune">Pune</label>
+        <input type="checkbox" id="pune">
+    </div>
+    <div>
+        <label for="ahmd">Ahemdabad</label>
+        <input type="checkbox" id="ahmd">
+    </div>
+    <div>
+        <label for="bengaluru">Bengaluru</label>
+        <input type="checkbox" id="bengaluru">
+    </div>
+    <input type="number" min="1" max="20" value="10">
+    <button onclick="callFun(this)">Click Me</button>
+    <article>
+        <h3>Article</h3>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit at alias, nulla fugit debitis rem hic quidem, repellat ducimus officiis consequatur. Maiores velit vitae nihil laborum delectus, nobis labore aut.
+    </article>
+    <div class="red">
+        <section>
+            <article>
+                <h3>Article</h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit at alias, nulla fugit debitis rem hic quidem, repellat ducimus officiis consequatur. Maiores velit vitae nihil laborum delectus, nobis labore aut.
+            </article>
+        </section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident officia necessitatibus optio non, aut esse animi odio sunt qui modi repellat! Placeat itaque quod culpa repudiandae. Excepturi, suscipit atque.</div>
+    <div class="z"></div>
+</body>
+</html>

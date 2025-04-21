@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation API
+    </title>
+    <script>
+        function validateMe(){
+            valtech_age = document.getElementById("valtech_age").setCustomValidity("please fill this valtech age");
+        };
+        window.onload = validateMe;
+
+        function checkit(elm){
+            if(elm.value<18){
+                elm.setCustomValidity("you are too young to join us");
+            }else if(elm.value>90){
+                elm.setCustomValidity("you are too old to join us");
+            }else{
+                elm.setCustomValidity("");
+            }
+        };
+    </script>
+</head>
+<body>
+    <form action="#" method="get">
+        <table>
+            <tbody>
+                <tr>
+                    <td>username</td>
+                    <td><input type="text" name="username" required/></td>
+                </tr>
+                <tr>
+                    <td>user's email</td>
+                    <td><input type="email" name="useremail" pattern=".+@gmail\.com" required/></td>
+                </tr>
+                <tr>
+                    <td>user's phone</td>
+                    <td><input type="text" title="###-#######" name="userphone" pattern="[0-9]{3}-[0-9]{7}" required/></td>
+                </tr>
+                <tr>
+                    <td>user's age</td>
+                    <td>
+                        <input oninput="checkit(this)" id="valtech_age" name="userage" required/>
+                        <!-- <input type="number" name="userage" min="18" max="90" required/> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button style="width:220px;">Click here</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

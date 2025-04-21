@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: palevioletred;
+            margin: 10px;
+            border: 10px solid black;
+        }
+        .x:nth-child(1){
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+        .x:nth-child(2){
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 100px;
+        }
+        .y{
+            border-radius: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box x">
+    </div>
+    <div class="box x"></div>
+    <hr>
+    <div class="box y"></div>
+    <div class="box y"></div>
+</body>
+</html>

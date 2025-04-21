@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes valtech {
+        0%{
+            background-image: url(images/horse.jpg);
+            background-position: 0px;
+        }
+        10%{
+            background-image: url(images/horse.jpg);
+            background-position: -2000px;
+        }
+        20%{
+            background-image: url(images/horse.jpg);
+            background-position: -1800px;
+        }
+        30%{
+            background-image: url(images/horse.jpg);
+            background-position: -1600px;
+        }
+        40%{
+            background-image: url(images/horse.jpg);
+            background-position: -1400px;
+        }
+        50%{
+            background-image: url(images/horse.jpg);
+            background-position: -1200px;
+        }
+        60%{
+            background-image: url(images/horse.jpg);
+            background-position: -900px;
+        }
+        70%{
+            background-image: url(images/horse.jpg);
+            background-position: -600px;
+        }
+        80%{
+            background-image: url(images/horse.jpg);
+            background-position: -400px;
+        }
+        90%{
+            background-image: url(images/horse.jpg);
+            background-position: -200px;
+        }
+        100%{
+            background-image: url(images/horse.jpg);
+            background-position: 0px;
+        }
+
+      }
+      .container {
+        width: 1200px;
+        align-items: center;
+        height: 600px;
+        background-color: silver;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        background-color: crimson;
+        width: 200px;
+        height: 134px;
+      }
+      .box {
+        animation-name: valtech;
+        animation-iteration-count: infinite;
+        animation-duration: 1800ms;
+        animation-direction: normal;
+      }
+       /* .box{
+        background-image: url(images/horse.jpg);
+        background-position: -1600px;
+       } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
+ 
+ 
+ 

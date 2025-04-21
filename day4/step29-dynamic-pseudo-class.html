@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pseudo Class</title>
+    <style>
+        .form{
+            border: 1px solid grey;
+            width: 340px;
+        }
+        .form div{
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+        input{
+            background-color: grey;
+        }
+        input:hover{
+            background-color: rgb(230, 189, 77);
+        }
+        input:focus{
+            background-color: rgb(136, 41, 87);
+        }
+        input:active{
+            background-color: rgb(131, 131, 227);
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div>
+            <!-- helps in accessbility -->
+            <label for="uname">User Name</label>
+            <input id="uname" type="text">
+        </div>
+        <div>
+            <label for="uname">User Password</label>
+            <input id="uname" type="password">
+        </div>
+        <div>
+            <label for="uname">User Age</label>
+            <input id="uname" type="number">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment</title>
+</head>
+<style>
+.bhavya_main_div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    background-color: #FF3500;
+    margin-bottom: 120px;
+}
+#div1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aliceblue; */
+}
+#div2{
+    width: 50%;
+    height: 100%;
+    background-color: #FF3500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+    
+}
+/* img{
+    width: 200px;
+    height: 70% ;
+} */
+#backDiv{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background-color: #FF3500;
+}
+#backImg{
+    /* align-content: center;
+    justify-content: center; */
+    width: 80px;
+    height: 60px;
+    opacity: 1;
+    padding: 10px;
+    border: 1px solid white;
+    
+}
+#thumbsUpDiv{
+    /* background-color: #FF3500; */
+    background-color: #fd3803;
+
+    /* align-content: center; */
+    height: 100%;
+    width:70%;
+    justify-content: end;
+    overflow: hidden;
+}
+#thumbsUpImg{
+    /* align-content: center; */
+    width:90%;
+    height: 80%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+#demo{
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* #div2{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    height: 100%;
+} */
+#rightleft{
+    width: 70%;
+    /* background-color: green; */
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    
+}
+#rightFwdDiv{
+    width:30%;
+    background-color: #FF3500;
+    height: 100%;
+}
+#fwdImg{
+    width: 80px;
+    height: 60px;
+    opacity: 1;
+    padding: 10px;
+    border: 1px solid white;
+}
+#rightFwdDiv{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background-color: #FF3500;
+}
+#rightleft2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+#doubInvCom{
+    /* display: inline-block; */
+    height: 100%;
+    width:10%;
+    background-color: #FF3500;
+    overflow: hidden;
+}
+#paragraphDiv{
+    width: 90%;
+    height: 100%;
+}
+#quoteImage{
+    height:60px;
+    width:50px;
+}
+#para{
+    font-size: 20px;
+    line-height: 1.8;
+    /* text-indent: -30px; */
+    /* letter-spacing: 15px; */
+}
+#startsImg{
+    margin-top: 10px;
+    margin-inline-start: 10%;
+    height: 40px;
+    width:150px;
+}
+/* section2 */
+.bhavya_div_2{
+    margin-block-start: 50px;
+    text-align: center;
+}
+.underline {
+        text-decoration: underline;
+      }
+      .small-txt {
+        display: block;
+        margin-bottom: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 16px;
+        font-weight: 400;    
+      }
+      .big-txt {
+        font-weight: 400;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 21px;
+        margin-bottom: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .txt-color {
+        color: #fd3803;
+      }
+      #rl3{
+        display: inline-block;
+        height:120px;
+        width:150px;
+      }
+      #rightleft3{
+        float: right;
+      }
+      #h2{
+        display: inline-block;
+        width: 400px;
+        font-size: 40px;
+      }
+      .card{
+        /* display: flex;
+        flex-direction: column; */
+        text-align: left;
+        padding: 25px;
+        border: 1px solid #f5f5f5;
+        /* border: 1px solid #dcdcdc; */
+        border-radius: 5px;
+        
+        /* width: 500px; */
+        /* background-color: yellow; */
+        /* padding-bottom: 10px; */
+      }
+      .discription{
+        font-size: 25px;
+      }
+      .girdcontainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        /* background-color: black; */
+        /* width:100%; */
+        height:500px;
+        margin:220px;
+        margin-top: 70px;
+        row-gap: 25px;
+        column-gap: 25px;
+        
+      }
+      .discription{
+        /* font-family: -apple-system"system-ui""Segoe UI""Noto Sans"HelveticaArialsans-serif"Apple Color Emoji""Segoe UI Emoji"; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 500 ;
+      }
+      .blogss1div{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        /* background-color: white; */
+      }
+      .blogss2div{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      .blogss3div{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .rowflex{
+        display: flex;
+        flex-direction: row;
+      }
+      .imagecolumn{
+        width: 100%;
+        height: 330px;
+        /* margin-bottom: 0px; */
+      }
+      .blog1textdiv{
+        margin:0px;
+      }
+      .datetext{
+        color: silver;
+        font-weight: bold;
+      }
+      .imagerow{
+        height:200px;
+      }
+      .column2{
+        margin-right: 20px;
+      }
+      .innercard{
+      
+        display: inline-block;
+        background-color: #FFFFFF;
+        border:20px solid #fd3803;
+        width:200px;
+        height:100px;
+        margin-left: 400px;
+        margin-bottom: 10px;
+        /* box-sizing: border-box; */
+        border-radius: 15px;
+        transform: translate(0px, -145px);
+        /* align-items: center; */
+        /* align-content: center; */
+        /* justify-content: center; */
+        justify-items: center;
+        
+      }
+      #innerh2{
+        margin-right:16px ;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+      #innerp{
+        margin-right:20px ;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      /* .blogss1imagediv */
+     
+      
+      
+
+</style>
+<body>
+    <div class="bhavya_main">
+        <div class="bhavya_main_div">
+            <div id="div1">
+                <div id="backDiv">
+                    <img id="backImg" src="images-for-assessment/smallback.png" alt="Back">   
+                </div>
+                <div id="thumbsUpDiv">
+                    <img id="thumbsUpImg" src="images-for-assessment/thubs_up_man.png" alt="Picture">
+                    <div class="innercard">
+                        <h2><span id="innerh2">Jonathon Doe</span></h2>
+                        <p><span id="innerp">COO At Mazda</span></p>                    
+                    </div>
+                </div>
+
+            </div>
+            <div id="div2">
+                <div id="rightleft">
+                    <div id="rightleft1">
+                        <span id="testimonial">Testimonial</span>
+                        <h2><span id="h2">What Our Customers Are Saying</span></h2>
+                    </div>
+                    <div id="rightleft2">
+                        <div id="doubInvCom">
+                            <img id="quoteImage" src="images-for-assessment/copied.png" alt="Back">
+                        </div>
+                        <div id="paragraphDiv">
+                            <span id="para"><p></p>
+                                I had an amazing experience with[Your Company Name].The<br>
+                                booking process was so simple, and the car was in excellent<br>
+                                condition.The staff was friendly and helpful,making for it buy<br>
+                                everything I needed.I will definitely use their again!</p>
+                            </span>
+                        </div>
+                        
+                        
+
+                    </div>
+                    <div id="starsDiv">
+                        <img id="startsImg" src="images-for-assessment/starts.png" alt="stars">
+                    </div>
+                    <div id="rightleft3">
+                        <img id="rl3" src="images-for-assessment/div3image.png" alt="Back">
+                    </div>
+                </div>
+                <div id="rightFwdDiv">
+                    <img id="fwdImg" src="images-for-assessment/smallnext.png" alt="Back">
+                </div>
+            </div>
+            
+        </div>
+        <div class="bhavya_div_2">
+            <div>
+                <span class="small-txt txt-color">
+                    Latest Blog</span><br/>
+                <span class="big-txt">Our Latest</span>
+                <span class="underline txt-color big-txt">Blog</span>
+            </div>
+            <div class="girdcontainer">
+                <div class = "card blogss1div">
+                    <div class="blogss1imagediv">
+                        <img class="blogimage imagecolumn" id="blogss1image" src="images-for-assessment/blogss1.png" alt="Picture 1">
+                    </div>
+                    <div class="blog1textdiv">
+                        <span class="datetext"><p>March 26, 2024</p></span>
+                         <span class="discription" id="discription1"><p>Braking It Down Understanding the Key Parts of Your Car's Brake Parts System</p></span> 
+                    </div>
+                </div>
+
+
+                <div class = "card rowflex blogss2div">
+                    <div class="blogss2imagediv column2">
+                        <img class="blogimage imagerow" id="blogss2image" src="images-for-assessment/blogss2.png" alt="Picture 2">
+                    </div>
+                    <div class="blog2textdiv">
+                        <span class="datetext"><p>March 26, 2024</p></span>
+                        
+                        <span class="discription" id="discription2"><p>A Beginner's Guide to Understanding Your Car's Engine Components</p></span>
+                        
+                    </div>
+
+                </div>
+
+
+
+                <div class = "card rowflex blogss3div">
+                    <div class="blogss3imagediv column2">
+                        <img class="blogimage imagerow" id="blogss1image" src="images-for-assessment/blogss3.png" alt="Picture 3">
+                    </div>
+                    <div class="blog1textdiv">
+                        <span class="datetext"><p>March 26, 2024</p></span>
+                        
+                        <span class="discription" id="discription3"><p> The Ultimate Guide to Car Suspension: What You Need to Know</p></span>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

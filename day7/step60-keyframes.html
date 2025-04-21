@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        @keyframes sakshi {
+            from{
+                background-color: blue;
+                transform: translateX(-300px);
+            }
+            to{
+                background-color: rgb(11, 134, 175);
+                transform: translateX(300px);
+            }
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            background-color: red;
+        }
+        .box{
+            animation-name: sakshi;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

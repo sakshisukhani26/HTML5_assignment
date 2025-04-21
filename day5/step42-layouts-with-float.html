@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        reset.css
+        normalize.css
+      */
+      body {
+        margin: 0px;
+      }
+      section {
+        width: 780px;
+        background-color: #ee964b;
+        margin: auto;
+        display: table;
+      }
+      article {
+        padding: 20px;
+        margin: 0px 10px;
+        float: left;
+      }
+      article:nth-child(1) {
+        width: 200px;
+        background-color: #0d3b66;
+      }
+      img{
+        max-width: 200px;
+        display: block;
+      }
+      article:nth-child(2) {
+        width: 200px;
+        background-color: #faf0ca;
+      }
+      article:nth-child(3) {
+        width: 200px;
+        background-color: #f4d35e;
+      }
+      article h1{
+        background-color: aquamarine;
+        margin-top: 0px;
+        text-align: center;
+      }
+      section::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <img src="css-images/001.jpg">
+        <h1>Article 1</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dolore
+        laudantium. Eveniet repudiandae a nisi recusandae optio! Autem quibusdam
+        iste alias! Eius atque, sed tenetur dicta dolores laboriosam doloremque
+        obcaecati?
+      </article>
+      <article>
+        <img src="css-images/002.jpg">
+        <h1>Article 2</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        minus quos ut, beatae explicabo autem voluptatem illum ipsam tenetur
+        amet sit, perspiciatis repellat quo ex temporibus laborum, deserunt
+        optio quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        minus quos ut, beatae explicabo autem voluptatem illum ipsam tenetur
+        amet sit, perspiciatis repellat quo ex temporibus laborum, deserunt
+        optio quibusdam!
+      </article>
+      <article>
+        <img src="css-images/003.jpg">
+        <h1>Article 3</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi
+        animi distinctio est dicta impedit nisi facere, porro similique sequi
+        quos officiis. Aut, distinctio molestias deserunt officiis beatae
+        expedita tempore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        minus quos ut, beatae explicabo autem voluptatem illum ipsam tenetur
+        amet sit, perspiciatis repellat quo ex temporibus laborum, deserunt
+        optio quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        minus quos ut, beatae explicabo autem voluptatem illum ipsam tenetur
+        amet sit, perspiciatis repellat quo ex temporibus laborum, deserunt
+        optio quibusdam!
+      </article>
+    </section>
+    <!-- 
+    <aside>
+      <div>welcome to your life</div>
+    </aside> 
+    -->
+  </body>
+</html>
